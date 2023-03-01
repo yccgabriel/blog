@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* tailwind by default not showing list styling */
+/* ref: https://stackoverflow.com/a/69519605 */
+@layer base {
+  ul, ol {
+    list-style: revert;
+  }
+}
